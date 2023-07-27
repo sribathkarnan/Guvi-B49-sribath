@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    .container{
+        max-width: 400px;
+        margin: 30px ;
+        padding: 20px;
+        margin-bottom: 10px;
+        border: 3px solid black;
+        border-radius: 9px;
+    }
+
+    .body{
+        background-color: rgb(124, 89, 42);
+    }
+    
+   .form-group{
+         margin-bottom: 10px;
+ }
+    .result{
+        font-weight: bold;
+        margin-bottom: 10px
+ }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>calculator</h1>
+    <div class="form-group">
+        <label for="num1">number 1:</label>
+        <input type="number" id="num1" />
+        </div>
+    <div class="form-group">
+            <label for="num2">number 2:</label>
+            <input type="number" id="num2" />
+            </div>
+      <div class="form-group"></div>
+      <button id="add">add</button>
+      <button onclick="performcalculation('sub')">Sub</button>
+      <button onclick="performcalculation('mul')">Mul</button>
+      <button onclick="performcalculation('div')">Div</button>
+      </div>
+    </div>
+    <div class="result">
+        result:
+        <span id="result"></span> 
+    
+    </div>
+    <script
+      src ="index.js"></script>
+  </body>
+</html>

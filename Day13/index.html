@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">parent div</div>
+    <script>
+      const ele = document.createElement("div");
+      ele.setAttribute("id", "mainDiv");
+      ele.setAttribute("class", "main");
+
+      ele.innerText = "hello my dear nanaba";
+
+      const parentEle = document.getElementById("parent");
+      parentEle.appendChild(ele);
+    </script>
+
+    <div id="main">parent div</div>
+    <script>
+      const ele = document.createElement("div");
+      ele.setAttribute("target", "_blank");
+      ele.setAttribute("href", " ");
+
+      ele.innerText = "Click me";
+
+      const Parent = document.getElementById("main");
+      parentEle.appendChild(ele);
+    </script>
+  </body>
+</html>

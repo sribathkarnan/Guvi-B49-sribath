@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+    //your JS code goes here
+    </script>
+  </body>
+</html>
+
+
+1. IIFE: Immediately Invoked Function Expressions - These are self-Invoked
+functions that are executed Immediately after thay are defined.
