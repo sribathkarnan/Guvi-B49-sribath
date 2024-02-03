@@ -4,15 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Web Page</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 7px;
+        text-align: center;
+      }
+      #header {
+        background-color: aqua;
+        height: 20px;
+      }
+      #nav {
+        background-color: green;
+        height: 20px;
+      }
+      #footer {
+        background-color: gold;
+        height: 20px;
+      }
+      .header {
+        background-color: red;
+        height: 20px;
+      }
+    </style>
   </head>
   <body>
     <div>
-      <h1>Rathi mental hospital!!!</h1>
+      <h1>Nandhini mental hospital!!!</h1>
       <h1 style="color: dodgerblue">
-        Welcome to My <span style="color: brown">Website</span>
+        Welcome to My <span style="color: brown">Hospital</span>
       </h1>
-      <a target="_blank" href="https://www.guvi.in/">Click here</a> to visit
-      Guvi Website!!
+      <a href="https://www.guvi.in/" target="_blank"
+        ><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_a-2XjRyx8Xbfbwm09twBJyYWk9nu0pvOgpkQKvuhxKh9TY_1H44jm8xNQmjIKfBVA20&usqp=CAU"
+        />
+        <br />
+        Click here</a
+      >to visit Guvi Website!!
     </div>
     <section>
       <p>This is a <span style="color: dodgerblue">paragraph</span> of text.</p>
@@ -29,9 +61,95 @@
         <li>WOMEN</li>
         <li>KIDS</li>
       </ol>
+      <dl>
+        <dt>Bharathan</dt>
+        <dd>-Frelance web design developer</dd>
+      </dl>
+      <hr />
+      <br />
+      <table>
+        <tr>
+          <th>name:</th>
+          <td>sribath</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Telephone</th>
+          <td>8489714771</td>
+        </tr>
+        <tr>
+          <td>123456</td>
+        </tr>
+      </table>
       <img
-        src="https://i.pinimg.com/originals/89/a6/38/89a638e61ed2b5b40882e721219bc35a.jpg"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_a-2XjRyx8Xbfbwm09twBJyYWk9nu0pvOgpkQKvuhxKh9TY_1H44jm8xNQmjIKfBVA20&usqp=CAU"
       />
     </article>
+    <hr />
+    <br />
+    <!--form tags-->
+
+    <label>First name:</label><br />
+    <input type="name" /><br />
+    <label>password:</label><br />
+    <input type="password" /><br />
+    <label>select your course</label><br />
+    <select>
+      <option>html</option>
+      <option>css</option>
+      <option>java</option>
+      ></select
+    ><br />
+    <h3>select gender</h3>
+    <label>male</label><input type="radio" name="gender" /> <label>female</label
+    ><input type="radio" name="gender" /> <label>other</label
+    ><input type="radio" name="gender" />
+    <br />
+    <h3>select language</h3>
+    <br />
+    <label>tamil</label><input type="checkbox" name="gender" />
+    <label>english</label><input type="checkbox" name="gender" />
+    <label>maths</label><input type="checkbox" name="gender" />
+    <br />
+    <label>select your color</label>
+    <input type="color" value="red" /><br />
+    <label>select youe date</label>
+    <input type="date" />
+    <br />
+    <h3>upload your resume</h3>
+    <input type="file" /><br />
+    <textarea cols="15" row="8">comment</textarea>
+    <br />
+    <input type="submit" />
+    <hr />
+    <br />
+    <!--class and id attributes-->
+
+    <div id="header">class and id</div>
+    <div id="nav">class and id</div>
+    <div id="footer">class and id</div>
+    <br />
+    <div class="header">class and id</div>
+    <div class="header">class and id</div>
+    <div class="header">class and id</div>
+    <br />
+    <hr />
+    <br />
+    <!--html media tags-->
+    <!--video tag-->
+    <video controls><source src="b49/video.1.mp4" type="video/mp4" /></video>
+    <!--AUDIO TAG-->
+    <audio controls><source src="b49/video.1.mp4" type="video/mp4" /></audio>
+    <!--youtube tag-->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/H9nUgvlMXOw?si=oGR0qjtjeTXJhu1y"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <hr />
   </body>
 </html>
